@@ -1,0 +1,22 @@
+<div class="colum">
+  <div class="row">
+    <div class="col-sm-3">
+      <h1> {{ test }}</h1>
+      <h2> {{ text }}</h2>
+      <input class="col-sm-4"type="text"[(ngModel)]="text"[disabled]="isBoolean">
+      <button class="btn btn-success" type="button"(click)="isBoolean =!isBoolean">Enable|Disable</button>
+      <ul>
+        <li *ngFor="let Universities of university">{{Universities}}</li>
+        <label class="col-xs-8">Enter the First Student</label>
+        <input class="col-xs-8" type="text" [(ngModel)]="student1">
+        <label class="col-xs-8">Enter the Second Student</label>
+        <input class="col-xs-8" type="text" [(ngModel)]="student2">
+        <button type="button" class="btn-success" (click)="ComputerScience()">ComputerScience</button>
+        <button type="button" class="btn-success" (click)="Nursing()">Nursing</button>
+        <button type="button" class="btn-success" (click)="Engineering()">Engineering</button>
+        <button type="button" class="btn-success" (click)="Accounting()">Accounting</button>
+        <p>Apply: {{apply}}</p>
+      </ul>
+    </div>
+  </div>
+</div>
